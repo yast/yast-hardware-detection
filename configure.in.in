@@ -4,6 +4,13 @@
 @YAST2-INIT-COMMON@
 @YAST2-INIT-PROGRAM@
 
+# FIXME: put this to devtools, fix dependencies in core
+AGENT_LIBADD='dnl
+ $(libdir)/libscr.la dnl
+ $(libdir)/libycp.la dnl
+ $(libdir)/liby2.la dnl
+ ${Y2UTIL_LIBS}'
+
 ## some common checks
 @YAST2-CHECKS-COMMON@
 @YAST2-CHECKS-PROGRAM@

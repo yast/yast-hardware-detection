@@ -1,0 +1,11 @@
+This is a TODO file for the HardwareDetection SCR agent.
+----------------------------------------------
+$Id: TODO.txt 2808 2002-06-21 20:41:00Z kkaempf $
+
+TODO:
+-----
+
+- Something
+- Something else
+- ...
+

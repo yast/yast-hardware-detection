@@ -1,0 +1,24 @@
+@HEADER-COMMENT@
+# neededforbuild gpp libgpp libxcrypt libxcrypt-devel yast2-devel-packages
+
+@HEADER@
+Summary:	-
+
+%description
+-
+
+@PREP@
+
+@BUILD@
+
+@INSTALL@
+
+@CLEAN@
+
+%files
+%defattr(-,root,root)
+@scrconfdir@/*.scr
+@plugindir@/libpy2ag_hardware-detection.so.*
+@plugindir@/libpy2ag_hardware-detection.so
+@plugindir@/libpy2ag_hardware-detection.la
+%doc @docdir@

@@ -1,8 +1,10 @@
 @HEADER-COMMENT@
-# neededforbuild gpp libgpp libxcrypt libxcrypt-devel yast2-devel-packages
+# neededforbuild gpp libgpp libxcrypt libxcrypt-devel openssl openssl-devel blocxx blocxx-devel pcre yast2-devel-packages dbus-1 dbus-1-devel dbus-1-glib hal hal-devel hwinfo hwinfo-devel klibc klibc-utils sysfsutils wireless-tools
 
 @HEADER@
 Summary:	-
+# hwinfo-11.10: hd_change_config_status(hd_data, ...)
+Requires:       hwinfo >= 11.10
 
 %description
 -
@@ -12,13 +14,13 @@ Summary:	-
 @BUILD@
 
 @INSTALL@
+rm $RPM_BUILD_ROOT/@plugindir@/libpy2ag_hwprobe.la
 
 @CLEAN@
 
 %files
 %defattr(-,root,root)
 @scrconfdir@/*.scr
-@plugindir@/libpy2ag_hardware-detection.so.*
-@plugindir@/libpy2ag_hardware-detection.so
-@plugindir@/libpy2ag_hardware-detection.la
+@plugindir@/libpy2ag_hwprobe.so.*
+@plugindir@/libpy2ag_hwprobe.so
 %doc @docdir@

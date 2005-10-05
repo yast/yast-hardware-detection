@@ -1,10 +1,10 @@
 #
-# Makefile.am for core/agent-probe/doc
+# Makefile.am for hardware-detection/doc
 #
 
 SUBDIRS = autodocs
 
-htmldir = $(docdir)/agent-probe
+htmldir = $(docdir)
 
 html_DATA = hwprobe.html
 EXTRA_DIST = $(html_DATA)

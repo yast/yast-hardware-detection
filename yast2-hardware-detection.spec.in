@@ -1,5 +1,5 @@
 @HEADER-COMMENT@
-# neededforbuild gpp libgpp libxcrypt libxcrypt-devel openssl openssl-devel blocxx blocxx-devel pcre yast2-devel-packages dbus-1 dbus-1-devel dbus-1-glib hal hal-devel hwinfo hwinfo-devel klibc klibc-utils sysfsutils wireless-tools
+# neededforbuild gpp libgpp libxcrypt libxcrypt-devel openssl openssl-devel blocxx blocxx-devel pcre yast2-devel-packages dbus-1 dbus-1-devel dbus-1-glib hal hal-devel hwinfo hwinfo-devel sysfsutils wireless-tools
 
 @HEADER@
 Summary:	-

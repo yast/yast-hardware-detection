@@ -17,6 +17,5 @@ runag_hwprobe_SOURCES = runag_hwprobe.cc
 runag_hwprobe_LDADD = ${AGENT_LIBADD}
 runag_hwprobe_LDFLAGS = 			\
 	-Xlinker --whole-archive		\
-	$(plugindir)/libpy2stdio.la		\
 	../src/libpy2ag_hwprobe.la		\
 	-Xlinker --no-whole-archive

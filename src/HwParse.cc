@@ -1198,6 +1198,11 @@ HwProbe::hd2value (hd_t *hd)
 			out->add (YCPString ("vendor"), YCPString (info->vendor));
 		    if (info->model)
 			out->add (YCPString ("model"), YCPString (info->model));
+#if HD_VERSION >= 12
+		    // #145485
+		    if (info->formfactor)
+			out->add (YCPString ("formfactor"), YCPString (info->formfactor));
+#endif
 		}
 	    }
 	    break;

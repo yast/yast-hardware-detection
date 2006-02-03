@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Fri Feb  3 16:23:48 CET 2006 - jsuchome@suse.cz
+
+- reduced BuildRequires
+- 2.13.3
+
+-------------------------------------------------------------------
 Wed Jan 25 18:16:51 CET 2006 - mvidner@suse.cz
 
 - Added "formfactor" to .probe.system (#145485).

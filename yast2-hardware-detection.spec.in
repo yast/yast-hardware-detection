@@ -1,7 +1,7 @@
 @HEADER-COMMENT@
 
 @HEADER@
-BuildRequires:	blocxx-devel gcc-c++ hal-devel hwinfo-devel libxcrypt-devel openssl-devel yast2-devel-packages
+BuildRequires:	blocxx-devel gcc-c++ hal-devel hwinfo-devel libxcrypt-devel openssl-devel yast2-core-devel yast2-devtools doxygen
 Summary:	-
 # hwinfo-11.10: hd_change_config_status(hd_data, ...)
 Requires:       hwinfo >= 11.10

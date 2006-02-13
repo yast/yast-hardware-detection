@@ -4,7 +4,7 @@
  *
  * Authors: Martin Vidner <mvidner@suse.cz>
  *
- * $Id: HardwareDetectionAgent.cc 13973 2004-02-08 17:05:28Z nashif $
+ * $Id$
  */
 
 #include "HardwareDetectionAgent.h"

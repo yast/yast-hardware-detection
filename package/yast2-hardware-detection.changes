@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon Jul 31 16:22:30 CEST 2006 - fehr@suse.de
+
+- improve detection of modules dependencies of disks (#195116,#194111)
+- add info about external disks to ycp map (#150744)
+- 2.13.4
+
+-------------------------------------------------------------------
 Fri Feb  3 16:23:48 CET 2006 - jsuchome@suse.cz
 
 - reduced BuildRequires

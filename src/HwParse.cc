@@ -689,6 +689,11 @@ HwProbe::hd2value (hd_t *hd)
 	out->add (YCPString ("wlan"), YCPBoolean (true));
     }
 
+    if (hd->is.hotpluggable)
+    {
+	out->add (YCPString ("hotpluggable"), YCPBoolean (true));
+    }
+
     // hd detail
 
     if (hd->detail)
@@ -1338,6 +1343,14 @@ HwProbe::hd2value (hd_t *hd)
 	&& strcmp (s, hd->old_unique_id) != 0)
     {
 	out->add (YCPString ("old_unique_key"), YCPString (hd->old_unique_id));
+    }
+
+    // parent unique key
+
+    s = hd->parent_id;
+    if (s)
+    {
+	out->add (YCPString ("parent_unique_key"), YCPString (s));
     }
 
     // vendor, device, subvendor, subdevice id, if known

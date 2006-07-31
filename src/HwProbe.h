@@ -93,6 +93,12 @@ private:
     YCPValue byItem (hd_hw_item_t item, bool re_probe);
 
     /**
+     * lookup hardware components matching unique_id
+     * return YCPValue
+     */
+    YCPValue readByUniqueID (const YCPValue& arg);
+
+    /**
      * lookup 'manual' (configured) hardware components matching item
      * return YCPValue
      */

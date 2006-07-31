@@ -113,6 +113,25 @@ readStatus (hd_data_t *hd_data, int which, const YCPValue& arg)
 }
 
 
+YCPValue
+HwProbe::readByUniqueID (const YCPValue& arg)
+{
+    const char *id = arg.isNull()? 0 : arg->asString()->value_cstr();
+
+    y2milestone ("readByUniqueID (%s)", id ? id : "NULL");
+
+    hd_t *hd = 0;
+
+    if(id) {
+      for(hd = hd_base->hd; hd; hd = hd->next) {
+        if(hd->unique_id && !strcmp(hd->unique_id, id)) break;
+      }
+    }
+
+    return( hd ? hd2value(hd) : YCPNull() );
+}
+
+
 int
 HwProbe::doScan (int force)
 {
@@ -263,6 +282,7 @@ HwProbe::checkPath (const YCPPath& path, const YCPValue& arg,
 	{ "is_uml",		11, pr_null,	0},
 	{ "framebuffer",	13, pr_fb,	0},
 	{ "status",		14, pr_null,	sub_status},
+	{ "uniqueid",		15, pr_null,	0},
 	/* now the hw_items  */
 #define ITEM(x) ((int)x + 42)
 	{ "cdrom",		ITEM(hw_cdrom),		pr_null,	0},
@@ -462,6 +482,9 @@ HwProbe::checkPath (const YCPPath& path, const YCPValue& arg,
 		break;
 		case 14:		// status
 		    value = readStatus (hd_base, typelist[1], arg);
+		break;
+		case 15:		// by unique_id
+		    value = readByUniqueID (arg);
 		break;
 		case ITEM(hw_manual):
 		    value = filterManual ((hd_hw_item_t)(typelist[1]-42));

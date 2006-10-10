@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Tue Oct 10 12:40:29 CEST 2006 - fehr@suse.de
+
+- add info about driver_module to ycp map (#211225)
+- 2.13.5
+
+-------------------------------------------------------------------
 Mon Jul 31 16:22:30 CEST 2006 - fehr@suse.de
 
 - improve detection of modules dependencies of disks (#195116,#194111)

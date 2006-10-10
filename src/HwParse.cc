@@ -1434,6 +1434,9 @@ HwProbe::hd2value (hd_t *hd)
     if (hd->driver != 0)
 	out->add (YCPString ("driver"), YCPString (hd->driver));
 
+    if (hd->driver_module != 0)
+	out->add (YCPString ("driver_module"), YCPString (hd->driver_module));
+
     // model (combined vendor and device names)
     // since model may already be inserted by the cpu stuff above we have
     // to check for it's present first (kind of weird)

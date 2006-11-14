@@ -1,8 +1,24 @@
 @HEADER-COMMENT@
 
 @HEADER@
-BuildRequires:	blocxx-devel gcc-c++ hal-devel hwinfo-devel libxcrypt-devel openssl-devel yast2-core-devel yast2-devtools doxygen
-BuildRequires: pkg-config
+# obviously
+BuildRequires:	gcc-c++
+# needed for all yast packages
+BuildRequires:	yast2-devtools
+# autodocs
+BuildRequires:	doxygen
+# this is a yast plugin, needs core
+BuildRequires:	yast2-core-devel
+# liby2.la
+BuildRequires:	blocxx-devel
+# libycp.la wants libxcrypt.la
+BuildRequires:	libxcrypt-devel
+# libycp.la
+BuildRequires:	openssl-devel
+# da library
+BuildRequires:	hwinfo-devel
+# we check for hwinfo
+BuildRequires:	pkg-config
 Summary:	-
 # hwinfo-13.6: s_hd_t.driver_module
 Requires:       hwinfo >= 13.6

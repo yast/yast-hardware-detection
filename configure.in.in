@@ -1,4 +1,4 @@
-## SCR agent configure.in.in
+## SCR agent configure.in.in -*- autoconf -*-
 
 ## initialize
 @YAST2-INIT-COMMON@
@@ -19,6 +19,18 @@ yast_found_hwinfo=no
 AC_CHECK_HEADER([hd.h],[yast_found_hwinfo=yes])
 if test "$yast_found_hwinfo" = "no"; then
   AC_MSG_ERROR([Headers for hwinfo are missing. Please install the package hwinfo-devel.])
+fi
+
+AH_TEMPLATE([HAVE_DRIVER_MODULE], [Define if s_hd_t.driver_module exists])
+HWINFO_VERSION=`pkg-config --print-errors --modversion hwinfo`
+if test -z "$HWINFO_VERSION"; then
+  HWINFO_VERSION=0.0
+fi
+HWINFO_VERSION_MAJOR=`echo $HWINFO_VERSION | sed 's/\..*//'`
+HWINFO_VERSION_MINOR=`echo $HWINFO_VERSION | sed 's/.*\.//'`
+echo ":$HWINFO_VERSION_MAJOR:$HWINFO_VERSION_MINOR:"
+if test "$HWINFO_VERSION_MAJOR" -eq 13 -a "$HWINFO_VERSION_MINOR" -ge 2; then
+  AC_DEFINE([HAVE_DRIVER_MODULE], 1)
 fi
 
 ## and generate the output

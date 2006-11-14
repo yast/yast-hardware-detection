@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Tue Nov 14 10:31:03 CET 2006 - mvidner@suse.cz
+
+- Convenience: enable compilation with hwinfo < 13.2.
+
+-------------------------------------------------------------------
 Fri Oct 13 01:10:33 CEST 2006 - ro@suse.de
 
 - do not link against libsysfs (not used anymore) 

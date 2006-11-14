@@ -10,6 +10,9 @@
 
 */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
 #include <stdio.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -1434,8 +1437,12 @@ HwProbe::hd2value (hd_t *hd)
     if (hd->driver != 0)
 	out->add (YCPString ("driver"), YCPString (hd->driver));
 
+#ifdef HAVE_DRIVER_MODULE
     if (hd->driver_module != 0)
 	out->add (YCPString ("driver_module"), YCPString (hd->driver_module));
+#else
+#warning "Omitting driver_module"
+#endif
 
     // model (combined vendor and device names)
     // since model may already be inserted by the cpu stuff above we have

@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Fri Oct 13 01:10:33 CEST 2006 - ro@suse.de
+
+- do not link against libsysfs (not used anymore) 
+
+-------------------------------------------------------------------
 Tue Oct 10 12:40:29 CEST 2006 - fehr@suse.de
 
 - add info about driver_module to ycp map (#211225)

@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
-Tue Nov 14 10:31:03 CET 2006 - mvidner@suse.cz
+Tue Nov 14 10:43:33 CET 2006 - mvidner@suse.cz
 
+- Use pkg-config to determine libraries needed by hwinfo.
 - Convenience: enable compilation with hwinfo < 13.6.
 
 -------------------------------------------------------------------

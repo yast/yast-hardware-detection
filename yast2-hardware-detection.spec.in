@@ -2,8 +2,9 @@
 
 @HEADER@
 BuildRequires:	blocxx-devel gcc-c++ hal-devel hwinfo-devel libxcrypt-devel openssl-devel yast2-core-devel yast2-devtools doxygen
+BuildRequires: pkg-config
 Summary:	-
-# hwinfo-11.10: hd_change_config_status(hd_data, ...)
+# hwinfo-13.6: s_hd_t.driver_module
 Requires:       hwinfo >= 13.6
 
 %description

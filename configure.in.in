@@ -28,7 +28,7 @@ if test -z "$HWINFO_VERSION"; then
 fi
 HWINFO_VERSION_MAJOR=`echo $HWINFO_VERSION | sed 's/\..*//'`
 HWINFO_VERSION_MINOR=`echo $HWINFO_VERSION | sed 's/.*\.//'`
-if test "$HWINFO_VERSION_MAJOR" -eq 13 -a "$HWINFO_VERSION_MINOR" -ge 2; then
+if test "$HWINFO_VERSION_MAJOR" -eq 13 -a "$HWINFO_VERSION_MINOR" -ge 6; then
   AC_DEFINE([HAVE_DRIVER_MODULE], 1)
 fi
 

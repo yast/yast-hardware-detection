@@ -1530,7 +1530,11 @@ HwProbe::hdlist2ycplist (hd_t *hd, hd_hw_item_t filteritem)
 YCPValue
 HwProbe::byItem (hd_hw_item_t item, bool re_probe)
 {
-    return hdlist2ycplist (hd_list (hd_base, item, 1, 0));
+    hd_t * hdlist = hd_list (hd_base, item, 1, 0);
+    YCPValue ret = hdlist2ycplist (hdlist);
+    hd_free_hd_list (hdlist);
+    return ret;
+;
 }
 
 
@@ -1541,7 +1545,10 @@ HwProbe::byItem (hd_hw_item_t item, bool re_probe)
 YCPValue
 HwProbe::filterManual (hd_hw_item_t item)
 {
-    return hdlist2ycplist (hd_list (hd_base, hw_manual, 1, 0), item);
+    hd_t * hdlist = hd_list (hd_base, hw_manual, 1, 0);
+    YCPValue ret = hdlist2ycplist (hdlist, item);
+    hd_free_hd_list (hdlist);
+    return ret;
 }
 
 

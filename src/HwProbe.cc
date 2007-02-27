@@ -14,6 +14,9 @@
 */
 
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
 #include <stdio.h>
 #include <stdlib.h>
 #include <fcntl.h>
@@ -283,6 +286,9 @@ HwProbe::checkPath (const YCPPath& path, const YCPValue& arg,
 	{ "framebuffer",	13, pr_fb,	0},
 	{ "status",		14, pr_null,	sub_status},
 	{ "uniqueid",		15, pr_null,	0},
+#ifdef HAVE_HD_IS_XEN
+	{ "is_xen",		16, pr_null,	0},
+#endif
 	/* now the hw_items  */
 #define ITEM(x) ((int)x + 42)
 	{ "cdrom",		ITEM(hw_cdrom),		pr_null,	0},
@@ -486,6 +492,13 @@ HwProbe::checkPath (const YCPPath& path, const YCPValue& arg,
 		case 15:		// by unique_id
 		    value = readByUniqueID (arg);
 		break;
+#ifdef HAVE_HD_IS_XEN
+		case 16:		// is_xen, #241564
+		    value = YCPBoolean (hd_is_xen (hd_base) ? true : false);
+		break;
+#else
+#warning "Omitting is_xen"
+#endif
 		case ITEM(hw_manual):
 		    value = filterManual ((hd_hw_item_t)(typelist[1]-42));
 		break;

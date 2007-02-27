@@ -20,8 +20,8 @@ BuildRequires:	hwinfo-devel
 # we check for hwinfo
 BuildRequires:	pkg-config
 Summary:	-
-# hwinfo-13.6: s_hd_t.driver_module
-Requires:       hwinfo >= 13.6
+# hwinfo-13.24: hd_is_xen
+Requires:       hwinfo >= 13.23
 
 %description
 -

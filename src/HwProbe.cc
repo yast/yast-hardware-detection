@@ -263,6 +263,7 @@ HwProbe::checkPath (const YCPPath& path, const YCPValue& arg,
 	{ "is_uml",		11, pr_null,	0},
 	{ "framebuffer",	13, pr_fb,	0},
 	{ "status",		14, pr_null,	sub_status},
+	{ "is_xen",		15, pr_null,	0},
 	/* now the hw_items  */
 #define ITEM(x) ((int)x + 42)
 	{ "cdrom",		ITEM(hw_cdrom),		pr_null,	0},
@@ -462,6 +463,9 @@ HwProbe::checkPath (const YCPPath& path, const YCPValue& arg,
 		break;
 		case 14:		// status
 		    value = readStatus (hd_base, typelist[1], arg);
+		break;
+		case 15:		// is_xen, #241564
+		    value = YCPBoolean (hd_is_xen (hd_base) ? true : false);
 		break;
 		case ITEM(hw_manual):
 		    value = filterManual ((hd_hw_item_t)(typelist[1]-42));

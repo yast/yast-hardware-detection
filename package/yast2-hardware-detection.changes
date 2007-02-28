@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Feb 28 13:40:42 CET 2007 - jsrain@suse.cz
+
+- fixed more memory leaks when probing hardware (#249276)
+- 2.15.2
+
+-------------------------------------------------------------------
 Tue Feb 27 14:53:16 CET 2007 - jsrain@suse.cz
 
 - fixed memory leak when probing hardware (#249276)

@@ -465,7 +465,7 @@ HwProbe::checkPath (const YCPPath& path, const YCPValue& arg,
 		    value = readStatus (hd_base, typelist[1], arg);
 		break;
 		case 15:		// is_xen, #241564
-		    value = YCPBoolean (hd_is_xen (hd_base) ? true : false);
+//		    value = YCPBoolean (hd_is_xen (hd_base) ? true : false);
 		break;
 		case ITEM(hw_manual):
 		    value = filterManual ((hd_hw_item_t)(typelist[1]-42));

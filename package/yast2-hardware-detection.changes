@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Thu Mar  1 16:57:43 CET 2007 - mvidner@suse.cz
+
+- Fixed a bug in the last change that converted nearly
+  all probes to disk probes.
+- 2.13.7
+
+-------------------------------------------------------------------
 Wed Feb 28 13:40:42 CET 2007 - jsrain@suse.cz
 
 - fixed more memory leaks when probing hardware (#249276)

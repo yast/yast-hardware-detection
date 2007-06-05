@@ -1414,12 +1414,9 @@ HwProbe::hd2value (hd_t *hd)
     add_strlist (hd->unix_dev_names, &out, "dev_names");
     add_devnum (&hd->unix_dev_num, &out, "dev_num");
 
-// the sysfs path could be quite long but noone needs it, see sysfs_bus_id below
-#if 0
-    // sysfs path
+    // sysfs path, #208854
 
     add_str (hd->sysfs_id, &out, "sysfs_id");
-#endif
 
     // sysfs bus id
 

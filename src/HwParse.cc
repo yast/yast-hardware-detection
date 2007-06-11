@@ -1418,6 +1418,9 @@ HwProbe::hd2value (hd_t *hd)
 
     add_str (hd->sysfs_id, &out, "sysfs_id");
 
+    // module alias - from /lib/modules/$(uname -r)/modules.alias
+    add_str (hd->modalias, &out, "modalias");
+
     // sysfs bus id
 
     add_str (hd->sysfs_bus_id, &out, "sysfs_bus_id");

@@ -1554,6 +1554,7 @@ YCPValue
 HwProbe::byItem (hd_hw_item_t item, bool re_probe)
 {
     hd_data_t *my_hd_base = (hd_data_t *)calloc (1, sizeof (hd_data_t));
+    my_hd_base->flags.nowpa = 1; // #279938
     hd_t * hdlist = hd_list (my_hd_base, item, 1, 0);
     YCPValue ret = hdlist2ycplist (hdlist);
     hd_free_hd_data(my_hd_base);
@@ -1570,6 +1571,7 @@ YCPValue
 HwProbe::filterManual (hd_hw_item_t item)
 {
     hd_data_t *my_hd_base = (hd_data_t *)calloc (1, sizeof (hd_data_t));
+    my_hd_base->flags.nowpa = 1; // #279938
     hd_t * hdlist = hd_list (my_hd_base, hw_manual, 1, 0);
     YCPValue ret = hdlist2ycplist (hdlist, item);
     hd_free_hd_data (my_hd_base);

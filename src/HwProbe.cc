@@ -154,6 +154,7 @@ HwProbe::HwProbe()
     if (f > 0) close (f);
 
     hd_base = (hd_data_t *)calloc (1, sizeof (hd_data_t));
+    hd_base->flags.nowpa = 1;	// #279938
     hd_scan (hd_base);
 }
 

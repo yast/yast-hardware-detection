@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Thu Jun 14 10:50:10 CEST 2007 - mvidner@suse.cz
+
+- Disable WPA probing so that the WiFi connection is not interrupted
+  (#279938).
+- 2.15.6
+
+-------------------------------------------------------------------
 Mon Jun 11 15:04:08 CEST 2007 - mzugec@suse.cz
 
 - Added modalias to the hardware item map

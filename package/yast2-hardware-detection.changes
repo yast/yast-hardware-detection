@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon Jul 16 13:47:34 CEST 2007 - mvidner@suse.cz
+
+- Added .probe.fingerprint (F301952).
+- Re-enabled test suite.
+- 2.15.7
+
+-------------------------------------------------------------------
 Thu Jun 14 10:50:10 CEST 2007 - mvidner@suse.cz
 
 - Disable WPA probing so that the WiFi connection is not interrupted

@@ -333,6 +333,11 @@ HwProbe::checkPath (const YCPPath& path, const YCPValue& arg,
 	{ "tape",		ITEM(hw_tape),		pr_null,	0},
 	{ "bluetooth",		ITEM(hw_bluetooth),	pr_null,	0},
 	{ "dsl",		ITEM(hw_dsl),		pr_null,	0},
+#ifdef HAVE_HW_FINGERPRINT
+	{ "fingerprint",	ITEM(hw_fingerprint),	pr_null,	0},
+#else
+#warning "Omitting hw_fingerprint"
+#endif
 //not-yet-in-hwinfo	{ "vbe",		ITEM(hw_vbe),		pr_null,	0},
 	{ 0, 0, pr_null, 0 }
     };

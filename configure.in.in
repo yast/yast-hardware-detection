@@ -43,6 +43,13 @@ if test \
   AC_DEFINE([HAVE_HD_IS_XEN], 1)
 fi
 
+AH_TEMPLATE([HAVE_HW_FINGERPRINT], [Define if hw_fingerprint exists])
+if test \
+  \( "$HWINFO_VERSION_MAJOR" -eq 13 -a "$HWINFO_VERSION_MINOR" -ge 38 \) -o \
+  "$HWINFO_VERSION_MAJOR" -ge 14; then
+  AC_DEFINE([HAVE_HW_FINGERPRINT], 1)
+fi
+
 PKG_CHECK_MODULES([HWINFO], [hwinfo])
 
 ## and generate the output

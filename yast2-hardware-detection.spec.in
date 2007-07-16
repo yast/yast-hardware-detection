@@ -22,8 +22,8 @@ BuildRequires:	hwinfo-devel
 # we check for hwinfo
 BuildRequires:	pkg-config
 Summary:	-
-# hwinfo-13.24: hd_is_xen
-Requires:       hwinfo >= 13.23
+# hwinfo-13.38: hw_fingerprint
+Requires:       hwinfo >= 13.38
 
 %description
 -

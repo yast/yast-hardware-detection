@@ -7,6 +7,8 @@ BuildRequires:	gcc-c++
 BuildRequires:	yast2-devtools
 # autodocs
 BuildRequires:	doxygen
+# testsuite
+BuildRequires:	dejagnu
 # this is a yast plugin, needs core
 BuildRequires:	yast2-core-devel
 # liby2.la

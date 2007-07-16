@@ -254,7 +254,7 @@ HwProbe::checkPath (const YCPPath& path, const YCPValue& arg,
 
     typedef struct
     {
-	char *pathname;
+	const char *pathname;
 	int type;
 	hd_probe_feature_t feature;
 	void *data;

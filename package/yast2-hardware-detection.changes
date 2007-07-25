@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Jul 25 12:59:57 CEST 2007 - mzugec@suse.cz
+
+- Enable WPA probing (reverted patch) (#279938)
+- 2.15.8 
+
+-------------------------------------------------------------------
 Mon Jul 16 13:47:34 CEST 2007 - mvidner@suse.cz
 
 - Added .probe.fingerprint (F301952).

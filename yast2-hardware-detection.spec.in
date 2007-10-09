@@ -3,8 +3,8 @@
 @HEADER@
 BuildRequires:	blocxx-devel gcc-c++ hal-devel hwinfo-devel libxcrypt-devel openssl-devel yast2-core-devel yast2-devtools doxygen
 Summary:	-
-# hwinfo-12.44: hd_is_xen
-Requires:       hwinfo >= 12.44
+# hwinfo-12.47: hw_fingerprint
+Requires:       hwinfo >= 12.47
 
 %description
 -

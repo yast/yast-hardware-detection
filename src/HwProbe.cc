@@ -149,8 +149,8 @@ HwProbe::HwProbe()
 {
     y2debug ("HwProbe::HwProbe()");
 
-    // create lock file
-    int f = open ("/var/lib/hardware/LOCK", O_CREAT);
+    // create lock file preventing hw-scan while yast is running (bnc #30217)
+    int f = open ("/var/lib/hardware/LOCK", O_CREAT, 0666);
     if (f > 0) close (f);
 
     hd_base = (hd_data_t *)calloc (1, sizeof (hd_data_t));

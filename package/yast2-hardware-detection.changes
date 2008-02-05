@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Tue Feb  5 12:23:05 CET 2008 - fehr@suse.de
+
+- make it possible to set flags on hwinfo probing mode.
+- 2.16.1
+
+-------------------------------------------------------------------
 Mon Nov 26 10:19:23 CET 2007 - mvidner@suse.cz
 
 - Don't create /var/lib/hardware/LOCK with random mode.

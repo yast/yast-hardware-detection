@@ -289,6 +289,7 @@ HwProbe::checkPath (const YCPPath& path, const YCPValue& arg,
 #ifdef HAVE_HD_IS_XEN
 	{ "is_xen",		16, pr_null,	0},
 #endif
+	{ "disk_raid",		17, pr_null,	0},
 	/* now the hw_items  */
 #define ITEM(x) ((int)x + 42)
 	{ "cdrom",		ITEM(hw_cdrom),		pr_null,	0},
@@ -482,7 +483,7 @@ HwProbe::checkPath (const YCPPath& path, const YCPValue& arg,
 		    value = YCPBoolean (hd_smp_support (hd_base) ? true : false);
 		break;
 		case 10:		// bios_video
-		    byItem (hw_display, false);
+		    byItem (hw_display, no_settings);
 		    value = biosVideo ();
 		break;
 		case 11:		// is_uml
@@ -504,13 +505,16 @@ HwProbe::checkPath (const YCPPath& path, const YCPValue& arg,
 #else
 #warning "Omitting is_xen"
 #endif
+                case 17:
+		    value = byItem ((hd_hw_item_t)(hw_disk), list_md);
+		    break;
 		case ITEM(hw_manual):
 		    value = filterManual ((hd_hw_item_t)(typelist[1]-42));
 		break;
 		default:
 		    if (typelist[0] > 42)
 		    {
-			value = byItem ((hd_hw_item_t)(typelist[0]-42), true);
+			value = byItem ((hd_hw_item_t)(typelist[0]-42), no_settings);
 		    }
 		    else
 			value = YCPVoid ();

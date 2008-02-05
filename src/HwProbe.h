@@ -30,6 +30,8 @@
 class HwProbe : public SCRAgent
 {
 public:
+    enum hwinfo_settings { no_settings=0, list_md };
+
     /**
      * Creates a new HwProbe.
      */
@@ -90,7 +92,7 @@ private:
      * lookup hardware components matching item
      * return YCPValue
      */
-    YCPValue byItem (hd_hw_item_t item, bool re_probe);
+    YCPValue byItem (hd_hw_item_t item, enum hwinfo_settings );
 
     /**
      * lookup hardware components matching unique_id

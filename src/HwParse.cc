@@ -1551,9 +1551,17 @@ HwProbe::hdlist2ycplist (hd_t *hd, hd_hw_item_t filteritem)
 //
 
 YCPValue
-HwProbe::byItem (hd_hw_item_t item, bool re_probe)
+HwProbe::byItem (hd_hw_item_t item, hwinfo_settings val )
 {
     hd_data_t *my_hd_base = (hd_data_t *)calloc (1, sizeof (hd_data_t));
+    switch( val )
+	{
+	case list_md:
+	    my_hd_base->flags.list_md = 1;
+	    break;
+	default:
+	    break;
+	}
     hd_t * hdlist = hd_list (my_hd_base, item, 1, 0);
     YCPValue ret = hdlist2ycplist (hdlist);
     hd_free_hd_data(my_hd_base);
@@ -1758,7 +1766,7 @@ HwProbe::vesaFramebuffer ()
 //  hd_set_probe_feature (hd_base, pr_prom);
 //  hd_set_probe_feature (hd_base, pr_bios_vbe);
 //  hd_set_probe_feature (hd_base, pr_fb);
-    YCPValue framebuffer = byItem (hw_framebuffer, true);
+    YCPValue framebuffer = byItem (hw_framebuffer, no_settings);
 
     if (framebuffer.isNull())
     {

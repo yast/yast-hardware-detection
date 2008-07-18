@@ -354,6 +354,17 @@ HwProbe::resource_type2map (const res_any_t *res, const char **name)
 	add_strlist (r->enc_modes,	&map, "enc_modes");
     }
     break;
+#if HD_VERSION >= 15
+    case res_fc:
+    {
+	RES2TYPE (res_fc_t);
+	*name = "fc";
+	if (r->wwpn_ok) map->add (YCPString ("wwpn"), YCPInteger (r->wwpn));
+	if (r->fcp_lun_ok) map->add (YCPString ("fcp_lun"), YCPInteger (r->fcp_lun));
+	if (r->port_id_ok) map->add (YCPString ("part_id"), YCPInteger (r->port_id));
+    }
+    break;
+#endif
     default:
 	map = YCPNull();
 	break;

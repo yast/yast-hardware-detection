@@ -5,10 +5,15 @@ Fri Jul 18 14:45:43 CEST 2008 - aschnell@suse.de
 - 2.17.0
 
 -------------------------------------------------------------------
+Tue Feb  5 14:27:27 CET 2008 - fehr@suse.de
+
+- fixed testsuite
+- 2.16.1
+
+-------------------------------------------------------------------
 Tue Feb  5 12:23:05 CET 2008 - fehr@suse.de
 
 - make it possible to set flags on hwinfo probing mode.
-- 2.16.1
 
 -------------------------------------------------------------------
 Mon Nov 26 10:19:23 CET 2007 - mvidner@suse.cz

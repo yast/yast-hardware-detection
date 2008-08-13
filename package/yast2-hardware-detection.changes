@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Aug 13 14:44:56 CEST 2008 - aschnell@suse.de
+
+- fixed fibre channel resources
+- 2.17.1
+
+-------------------------------------------------------------------
 Fri Jul 18 14:45:43 CEST 2008 - aschnell@suse.de
 
 - added fibre channel resources (fate #304333)

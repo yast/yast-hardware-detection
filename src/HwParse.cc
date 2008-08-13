@@ -202,6 +202,7 @@ HwProbe::resource_type2map (const res_any_t *res, const char **name)
     YCPMap map;
 
 #define RES2TYPE(t) t *r = (t *)res
+
     switch (res->type)
     {
 	case res_any:
@@ -361,7 +362,7 @@ HwProbe::resource_type2map (const res_any_t *res, const char **name)
 	*name = "fc";
 	if (r->wwpn_ok) map->add (YCPString ("wwpn"), YCPInteger (r->wwpn));
 	if (r->fcp_lun_ok) map->add (YCPString ("fcp_lun"), YCPInteger (r->fcp_lun));
-	if (r->port_id_ok) map->add (YCPString ("part_id"), YCPInteger (r->port_id));
+	if (r->port_id_ok) map->add (YCPString ("port_id"), YCPInteger (r->port_id));
     }
     break;
 #endif
@@ -373,6 +374,7 @@ HwProbe::resource_type2map (const res_any_t *res, const char **name)
 	map = YCPNull();
     }
     return map;
+
 #undef RES2TYPE
 }
 

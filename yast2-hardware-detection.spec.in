@@ -21,7 +21,7 @@ BuildRequires:	openssl-devel
 BuildRequires:	hwinfo-devel
 # we check for hwinfo
 BuildRequires:	pkg-config
-Summary:	-
+Summary:	YaST2 - Hardware Detection Interface
 # hwinfo-13.38: hw_fingerprint
 Requires:       hwinfo >= 13.38
 

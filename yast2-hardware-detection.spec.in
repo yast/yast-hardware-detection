@@ -1,6 +1,7 @@
 @HEADER-COMMENT@
 
 @HEADER@
+License: GPL v2 or later
 # obviously
 BuildRequires:	gcc-c++
 # needed for all yast packages

@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Tue Sep 13 10:50:28 CEST 2011 - mvidner@suse.cz
+
+- Use pr_bios for .probe.bios so that smbios info is included
+  (bnc#425059, bnc#716081).
+- 2.17.2
+
+-------------------------------------------------------------------
 Wed Aug 13 14:44:56 CEST 2008 - aschnell@suse.de
 
 - fixed fibre channel resources
@@ -136,4 +143,3 @@ Thu Sep 29 10:36:28 2005 - visnov@suse.cz
 - Initial version split off from yast2-core
 - 2.13.0
 
--------------------------------------------------------------------

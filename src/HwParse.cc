@@ -1261,6 +1261,23 @@ HwProbe::hd2value (hd_t *hd)
 		}
 	    }
 	    break;
+#ifdef HD_VERSION
+#if HD_VERSION >= 19
+	    case hd_detail_joystick: {
+		joystick_t *info = hd->detail->joystick.data;
+
+		if (info)
+		{
+		    YCPMap detail;
+		    detail->add (YCPString ("buttons"), YCPInteger (info->buttons));
+		    detail->add (YCPString ("axes"), YCPInteger (info->axes));
+		    out->add (YCPString ("detail"), detail);
+		}
+	    }
+#else
+#warning "Joystick details not available"
+#endif
+#endif
 	    default:
 	    break;
 	}

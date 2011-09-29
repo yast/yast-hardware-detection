@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Thu Sep 29 15:08:59 UTC 2011 - lslezak@suse.cz
+
+- return joystick details (number of buttons and axes)
+
+-------------------------------------------------------------------
 Tue Sep 13 10:50:28 CEST 2011 - mvidner@suse.cz
 
 - Use pr_bios for .probe.bios so that smbios info is included

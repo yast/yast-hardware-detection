@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Mon Oct 10 15:46:12 UTC 2011 - lslezak@suse.cz
+
+- 2.21.0
+
+-------------------------------------------------------------------
 Thu Sep 29 15:08:59 UTC 2011 - lslezak@suse.cz
 
 - return joystick details (number of buttons and axes)

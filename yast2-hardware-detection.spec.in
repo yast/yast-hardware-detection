@@ -16,8 +16,6 @@ BuildRequires:	dejagnu
 BuildRequires:	yast2-core-devel
 # liby2.la
 BuildRequires:	blocxx-devel
-# libycp.la wants libxcrypt.la
-BuildRequires:	libxcrypt-devel
 # libycp.la
 BuildRequires:	openssl-devel
 # da library

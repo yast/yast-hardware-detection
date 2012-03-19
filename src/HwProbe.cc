@@ -471,7 +471,7 @@ HwProbe::checkPath (const YCPPath& path, const YCPValue& arg,
 		    value = bootArch ();
 		break;
 		case 6:		// version
-		    value = YCPString (__DATE__", "__TIME__);
+		    value = YCPString (__DATE__ ", " __TIME__);
 		break;
 		case 7:		// boot_disk
 		    value = bootDisk ();

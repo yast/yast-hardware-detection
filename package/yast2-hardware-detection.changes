@@ -2,7 +2,7 @@
 Mon Mar 12 15:27:08 CET 2012 - aschnell@suse.de
 
 - provide sysfs_id (bnc#652962)
-- 2.13.8
+- 2.13.9
 
 -------------------------------------------------------------------
 Thu Mar  1 16:57:43 CET 2007 - mvidner@suse.cz

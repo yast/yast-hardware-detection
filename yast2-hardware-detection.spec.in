@@ -14,10 +14,6 @@ BuildRequires:	doxygen
 BuildRequires:	dejagnu
 # this is a yast plugin, needs core
 BuildRequires:	yast2-core-devel
-# liby2.la
-BuildRequires:	blocxx-devel
-# libycp.la
-BuildRequires:	openssl-devel
 # da library
 BuildRequires:	hwinfo-devel
 # we check for hwinfo

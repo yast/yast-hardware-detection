@@ -7,7 +7,7 @@
 
 #include <scr/run_agent.h>
 
-#include "../src/HwProbe.h"
+#include "../agent/HwProbe.h"
 
 
 int

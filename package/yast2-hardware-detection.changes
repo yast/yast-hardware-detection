@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Tue Aug 13 11:15:23 UTC 2013 - lslezak@suse.cz
+
+- fixed build with yast2-devtools >= 3.0.3
+- 3.0.1
+
+-------------------------------------------------------------------
 Wed Jul 31 08:29:23 UTC 2013 - yast-devel@opensuse.org
 
 - converted from YCP to Ruby by YCP Killer

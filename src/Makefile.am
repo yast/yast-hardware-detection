@@ -5,4 +5,3 @@ scrconf_DATA = \
 
 EXTRA_DIST = $(scrconf_DATA)
 
-include $(top_srcdir)/Makefile.am.common

@@ -29,7 +29,7 @@ License:        GPL-2.0+
 BuildRequires:	gcc-c++
 BuildRequires:  libtool
 # needed for all yast packages
-BuildRequires:	yast2-devtools >= 3.0.6
+BuildRequires:	yast2-devtools >= 3.1.10
 # autodocs
 BuildRequires:	doxygen
 # testsuite

@@ -710,6 +710,31 @@ HwProbe::hd2value (hd_t *hd)
 	out->add (YCPString ("hotpluggable"), YCPBoolean (true));
     }
 
+    if (hd->is.dualport)
+    {
+	out->add (YCPString ("dualport"), YCPBoolean (true));
+    }
+
+    if (hd->is.fcoe)
+    {
+	out->add (YCPString ("fcoe"), YCPBoolean (true));
+    }
+
+    if (hd->is.fcoe_offload)
+    {
+	out->add (YCPString ("fcoeoffload"), YCPBoolean (true));
+    }
+
+    if (hd->is.iscsi_offload)
+    {
+	out->add (YCPString ("iscsioffload"), YCPBoolean (true));
+    }
+
+    if (hd->is.storage_only)
+    {
+	out->add (YCPString ("storageonly"), YCPBoolean (true));
+    }
+
     // hd detail
 
     if (hd->detail)

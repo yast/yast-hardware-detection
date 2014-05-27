@@ -17,7 +17,7 @@
 
 
 Name:           yast2-hardware-detection
-Version:        3.1.2
+Version:        3.1.3
 Release:        0
 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
@@ -43,8 +43,7 @@ BuildRequires:	pkg-config
 Requires:       yast2-ruby-bindings >= 1.0.0
 
 Summary:	YaST2 - Hardware Detection Interface
-# hwinfo-13.38: hw_fingerprint
-Requires:       hwinfo >= 13.38
+Requires:       hwinfo >= 21.5
 
 %description
 This package contains the hardware detection library for YaST2.

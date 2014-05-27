@@ -722,17 +722,17 @@ HwProbe::hd2value (hd_t *hd)
 
     if (hd->is.fcoe_offload)
     {
-	out->add (YCPString ("fcoeoffload"), YCPBoolean (true));
+	out->add (YCPString ("fcoeoffload"), YCPBoolean (hd->is.fcoe_offload == 1 ? false : true));
     }
 
     if (hd->is.iscsi_offload)
     {
-	out->add (YCPString ("iscsioffload"), YCPBoolean (true));
+	out->add (YCPString ("iscsioffload"), YCPBoolean (hd->is.iscsi_offload == 1 ? false : true));
     }
 
     if (hd->is.storage_only)
     {
-	out->add (YCPString ("storageonly"), YCPBoolean (true));
+	out->add (YCPString ("storageonly"), YCPBoolean (hd->is.storage_only == 1 ? false : true));
     }
 
     // hd detail

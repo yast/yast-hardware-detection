@@ -14,7 +14,7 @@ INCLUDES = -I$(includedir)
 noinst_PROGRAMS = runag_hwprobe
 
 runag_hwprobe_SOURCES = runag_hwprobe.cc
-runag_hwprobe_LDADD = ${AGENT_LIBADD}
+runag_hwprobe_LDADD = ${AGENT_LIBADD} $(libdir)/liby2util.la $(libdir)/libycpvalues.la
 runag_hwprobe_LDFLAGS = 			\
 	-Xlinker --whole-archive		\
 	../agent/libpy2ag_hwprobe.la		\

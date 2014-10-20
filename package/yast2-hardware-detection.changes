@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Mon Oct 20 12:06:05 UTC 2014 - lslezak@suse.cz
+
+- added Travis support (.travis.yml, testsuite build fix)
+
+-------------------------------------------------------------------
 Tue May 27 09:49:05 CEST 2014 - snwint@suse.de
 
 - make ethtool private flags tri-state: (unset, false, true)

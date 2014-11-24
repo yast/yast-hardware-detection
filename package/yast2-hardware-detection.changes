@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon Nov 24 15:41:11 CET 2014 - aschnell@suse.de
+
+- added leading zeros for FCP LUNs (bsc#903069)
+- 3.1.4
+
+-------------------------------------------------------------------
+
 Mon Oct 20 12:06:05 UTC 2014 - lslezak@suse.cz
 
 - added Travis support (.travis.yml, testsuite build fix)

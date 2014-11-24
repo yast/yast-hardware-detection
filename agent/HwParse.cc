@@ -1259,9 +1259,9 @@ HwProbe::hd2value (hd_t *hd)
 		    YCPMap detail;
 #if defined(__s390__) || defined(__s390x__)
 		    char buf[128];
-		    snprintf (buf, 128, "0x%llx", info->wwpn);
+		    snprintf (buf, 128, "0x%016llx", info->wwpn);
 		    detail->add (YCPString ("wwpn"), YCPString (buf));
-		    snprintf (buf, 128, "0x%llx", info->fcp_lun);
+		    snprintf (buf, 128, "0x%016llx", info->fcp_lun);
 		    detail->add (YCPString ("fcp_lun"), YCPString (buf));
 		    if (info->controller_id)
 			detail->add (YCPString ("controller_id"), YCPString (info->controller_id));

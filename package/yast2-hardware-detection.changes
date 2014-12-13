@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Wed Dec 17 14:29:07 UTC 2014 - schwab@suse.de
+
+- Handle arch_aarch64 in .probe.architecture
+
+-------------------------------------------------------------------
 Mon Nov 24 15:41:11 CET 2014 - aschnell@suse.de
 
 - added leading zeros for FCP LUNs (bsc#903069)

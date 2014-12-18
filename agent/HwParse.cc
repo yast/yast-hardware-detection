@@ -47,6 +47,7 @@ cpu2string (hd_cpu_arch_t cpu_arch)
 	case arch_ia64:    s = "ia64"; break;
 	case arch_mips:    s = "mips"; break;
 	case arch_arm:     s = "arm"; break;
+	case arch_aarch64: s = "aarch64"; break;
 	case arch_x86_64:  s = "x86_64"; break;
 	default: s = "unknown";
     }

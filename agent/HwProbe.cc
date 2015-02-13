@@ -290,6 +290,8 @@ HwProbe::checkPath (const YCPPath& path, const YCPValue& arg,
 	{ "is_xen",		16, pr_null,	0},
 #endif
 	{ "disk_raid",		17, pr_null,	0},
+	{ "is_vmware",		18, pr_null,	0},
+	{ "is_vbox",		19, pr_null,	0},
 	/* now the hw_items  */
 #define ITEM(x) ((int)x + 42)
 	{ "cdrom",		ITEM(hw_cdrom),		pr_null,	0},
@@ -507,6 +509,12 @@ HwProbe::checkPath (const YCPPath& path, const YCPValue& arg,
 #endif
                 case 17:
 		    value = byItem ((hd_hw_item_t)(hw_disk), list_md);
+		    break;
+		case 18:		// is_vmware
+		    value = YCPBoolean(hd_base->flags.vmware);
+		    break;
+		case 19:		// is_vbox
+		    value = YCPBoolean(hd_base->flags.vbox);
 		    break;
 		case ITEM(hw_manual):
 		    value = filterManual ((hd_hw_item_t)(typelist[1]-42));

@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 Fri Feb 13 13:43:56 UTC 2015 - lslezak@suse.cz
 
-- added VMware and VirtualBox VM detectiion (bnc#773323)
+- added VMware and VirtualBox VM detection (bnc#773323)
   (paths .probe.is_vmware and .probe.is_vbox)
 - 3.1.6
 

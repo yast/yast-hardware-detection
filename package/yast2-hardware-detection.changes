@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Tue Feb 17 08:12:45 UTC 2015 - mvidner@suse.com
+
+- Changed .probe.version not to use a timestamp so that it passes
+  the build-compare check (boo#915938).
+- 3.1.7
+
+-------------------------------------------------------------------
 Fri Feb 13 13:43:56 UTC 2015 - lslezak@suse.cz
 
 - added VMware and VirtualBox VM detection (bnc#773323)

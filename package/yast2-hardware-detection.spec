@@ -43,7 +43,7 @@ BuildRequires:	pkg-config
 Requires:       yast2-ruby-bindings >= 1.0.0
 
 Summary:	YaST2 - Hardware Detection Interface
-Requires:       hwinfo >= 21.5
+Requires:       hwinfo >= 21.36
 
 %description
 This package contains the hardware detection library for YaST2.

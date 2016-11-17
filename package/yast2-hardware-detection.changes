@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Thu Nov 17 12:54:55 CET 2016 - snwint@suse.de
+
+- parse new entry for permanent mac address (bsc #1007172)
+- 3.1.8
+
+-------------------------------------------------------------------
 Tue Feb 17 08:12:45 UTC 2015 - mvidner@suse.com
 
 - Changed .probe.version not to use a timestamp so that it passes

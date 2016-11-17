@@ -338,6 +338,7 @@ HwProbe::resource_type2map (const res_any_t *res, const char **name)
 	map->add (YCPString ("addr"), YCPString (r->addr));
     }
     break;
+#if HD_FULL_VERSION >= 21036
     case res_phwaddr:
     {
 	RES2TYPE (res_hwaddr_t);
@@ -345,6 +346,7 @@ HwProbe::resource_type2map (const res_any_t *res, const char **name)
 	map->add (YCPString ("addr"), YCPString (r->addr));
     }
     break;
+#endif
     case res_link:
     {
 	RES2TYPE (res_link_t);

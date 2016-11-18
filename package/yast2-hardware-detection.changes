@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 Thu Nov 17 12:54:55 CET 2016 - snwint@suse.de
 
-- parse new entry for permanent mac address (bsc #1007172)
+- parse new entry for permanent mac address (bsc#1007172)
 - 3.1.8
 
 -------------------------------------------------------------------

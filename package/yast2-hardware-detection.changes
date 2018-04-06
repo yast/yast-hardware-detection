@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Fri Apr  6 14:30:17 UTC 2018 - mfilka@suse.com
+
+- bnc#1087957 - version bump
+- 4.0.0
+
+-------------------------------------------------------------------
 Thu Nov 17 12:54:55 CET 2016 - snwint@suse.de
 
 - parse new entry for permanent mac address (bsc#1007172)

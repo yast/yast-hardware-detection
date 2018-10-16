@@ -66,3 +66,4 @@ rm $RPM_BUILD_ROOT/%{yast_plugindir}/libpy2ag_hwprobe.la
 %{yast_plugindir}/libpy2ag_hwprobe.so.*
 %{yast_plugindir}/libpy2ag_hwprobe.so
 %doc %{yast_docdir}
+%license COPYING

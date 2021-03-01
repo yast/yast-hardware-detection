@@ -1543,7 +1543,7 @@ HwProbe::hd2value (hd_t *hd)
 
     // map of resources
 
-    if (hd->res > 0)
+    if (hd->res)
     {
 	YCPMap map;
 	hd_res_t *resource;

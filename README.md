@@ -2,8 +2,7 @@
 
 [![Workflow Status](https://github.com/yast/yast-hardware-detection/workflows/CI/badge.svg?branch=master)](
 https://github.com/yast/yast-hardware-detection/actions?query=branch%3Amaster)
-[![Jenkins Status](https://ci.opensuse.org/buildStatus/icon?job=yast-yast-hardware-detection-master)](
-https://ci.opensuse.org/view/Yast/job/yast-yast-hardware-detection-master/)
+[![OBS](https://github.com/yast/yast-hardware-detection/actions/workflows/submit.yml/badge.svg)](https://github.com/yast/yast-hardware-detection/actions/workflows/submit.yml)
 
 
 ## Summary
